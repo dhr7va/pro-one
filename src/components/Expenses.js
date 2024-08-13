@@ -1,5 +1,5 @@
 import "./Expenses.css";
-import ExpenseItems from "./ExpenseItems";
+import ExpenseItem from "./ExpenseItem";
 
 export default function Expenses() {
     const expenses = [
@@ -12,7 +12,7 @@ export default function Expenses() {
     return (
         <div className="expenses">
             {expenses.map((expense) => (
-                <ExpenseItems
+                <ExpenseItem
                     key={expense.id}
                     date={expense.date}
                     title={expense.title}
